@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Règles de confidentialité / Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+    .language-switch {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .language-switch a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .language-switch a:hover {
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      document.getElementById('fr').classList.toggle('hidden', lang !== 'fr');
+      document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="language-switch">
+      <a href="#" onclick="switchLanguage('fr'); return false;">Français</a> | 
+      <a href="#" onclick="switchLanguage('en'); return false;">English</a>
+    </div>
+
+    <!-- Contenu en français -->
+    <div id="fr">
+      <h1>Règles de confidentialité</h1>
+      <p>Bienvenue sur l'application <strong>Inter Cook</strong>. Nous accordons une grande importance à la confidentialité de vos données.</p>
+
+      <h2>Données collectées</h2>
+      <p>Nous utilisons AWS et une méthode d'authentification (email/mot de passe) pour garantir la sécurité de vos connexions. Aucune donnée sensible ou personnelle n'est stockée sur nos serveurs.</p>
+
+      <h2>Traitement des données</h2>
+      <p>Les seules données utilisées sont :</p>
+      <ul>
+        <li>Votre adresse e-mail pour l'authentification.</li>
+        <li>Vos préférences pour l'utilisation de l'application.</li>
+      </ul>
+      <p>Toutes les données sont sécurisées et gérées par AWS, en conformité avec les normes de sécurité internationales.</p>
+
+      <h2>Engagements</h2>
+      <p>Nous ne stockons aucune donnée utilisateur de manière permanente. Votre confidentialité est notre priorité.</p>
+
+      <h2>Contact</h2>
+      <p>Pour toute question, contactez-nous à <a href="intercook2024@gmail.com">intercook2024@gmail.com</a>.</p>
+    </div>
+
+    <!-- Contenu en anglais -->
+    <div id="en" class="hidden">
+      <h1>Privacy Policy</h1>
+      <p>Welcome to the <strong>Inter Cook</strong> application. We prioritize the confidentiality of your data.</p>
+
+      <h2>Data Collected</h2>
+      <p>We use AWS and an authentication method (email/password) to ensure the security of your logins. No sensitive or personal data is stored on our servers.</p>
+
+      <h2>Data Processing</h2>
+      <p>The only data we use includes:</p>
+      <ul>
+        <li>Your email address for authentication.</li>
+        <li>Your preferences for using the application.</li>
+      </ul>
+      <p>All data is secured and managed by AWS in compliance with international security standards.</p>
+
+      <h2>Commitments</h2>
+      <p>We do not store any user data permanently. Your privacy is our priority.</p>
+
+      <h2>Contact</h2>
+      <p>For any questions, please contact us at <a href="mailto:intercook2024@gmail.com">intercook2024@gmail.com</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
